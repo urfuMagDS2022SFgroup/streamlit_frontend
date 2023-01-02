@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "URFU_2022_GROUP_20_PROJECT_FRONTEND"
+version = "0.5.0"
+description = "Streamlit based frontend for UrFU Master's machine learning program, first semester"
+authors = ["Vladimir Katin <katin.v.v.@gmail.com>"]
+license = "GPL v3"
+readme = "README.md"
+repository = "https://github.com/urfuMagDS2022SFgroup/streamlit_frontend"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+streamlit = "1.16.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
