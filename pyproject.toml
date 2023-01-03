@@ -10,6 +10,7 @@ repository = "https://github.com/urfuMagDS2022SFgroup/streamlit_frontend"
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
 streamlit = "1.16.0"
+requests = "2.28.1"
 
 
 [build-system]
