@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: poetry install --with tests
     - name: Download browser
-      run: poetry playwright install chromium 
+      run: poetry run playwright install chromium 
 #     - name: Lint with flake8
 #       run: |
 #         # stop the build if there are Python syntax errors or undefined names
@@ -39,4 +39,4 @@ jobs:
 #         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest --browser chromium
+        poetry run pytest --browser chromium
