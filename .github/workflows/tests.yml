@@ -32,7 +32,7 @@ jobs:
     - name: Download browser
       run: poetry run playwright install chromium
     - name: Run Streamlit for tests
-      run: poetry run streamlit run src/streamlit_frontend.py 
+      run: nohup poetry run streamlit run src/streamlit_frontend.py 
 #     - name: Lint with flake8
 #       run: |
 #         # stop the build if there are Python syntax errors or undefined names
