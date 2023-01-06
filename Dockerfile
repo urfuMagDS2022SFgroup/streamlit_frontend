@@ -10,10 +10,11 @@ RUN pip install poetry==$POETRY_VERSION
 COPY pyproject.toml /front/pyproject.toml
 COPY poetry.toml /front/poetry.toml
 COPY poetry.lock /front/poetry.lock
+COPY .streamlit /front/.streamlit
 RUN poetry install
 
 COPY src /front/src
 
 ENV PYTHONPATH=/front
 
-CMD poetry run streamlit run src/streamlit_frontend.py --server.address=$HOST --server.port=$PORT
+CMD poetry run streamlit run src/streamlit_frontend.py
