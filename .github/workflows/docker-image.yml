@@ -8,11 +8,11 @@ on:
 
 jobs:
 
-  build:
+  build_docker:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag streamlit_frontend:$(date +%s)
+      - uses: actions/checkout@v3
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag streamlit_frontend:$(date +%s)
