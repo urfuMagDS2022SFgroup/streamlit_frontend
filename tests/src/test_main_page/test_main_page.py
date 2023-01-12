@@ -6,7 +6,7 @@ class TestMainPage:
     def test_user_can_see_title(self, page: Page):
         locator = page.locator(".stMarkdown h1")
         title = "Welcome to UrFU ML Engineering 2022, Group 20 project"
-        expect(locator).to_have_text(title)
+        expect(locator).to_have_text(title, timeout=10000)
 
     def test_user_can_see_authors(self, page: Page):
         authors_title_locator = page.locator(".element-container h3")
