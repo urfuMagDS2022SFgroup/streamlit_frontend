@@ -20,7 +20,7 @@ def load_sentence() -> str | None:
     return None
 
 
-@st.cache
+@st.experimental_memo
 def get_project_info() -> Any:
     return requests.request(method="GET", url=url)
 
