@@ -37,6 +37,6 @@ jobs:
 #        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
 #        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run Streamlit for tests
-      run: poetry run streamlit run src/streamlit_frontend.py &
+      run: BACKEND_URL="http://dzailz.su:8000/" poetry run streamlit run src/streamlit_frontend.py &
     - name: Test with pytest
       run: poetry run pytest --browser chromium
