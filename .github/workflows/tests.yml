@@ -39,4 +39,4 @@ jobs:
     - name: Run Streamlit for tests
       run: poetry run streamlit run src/streamlit_frontend.py &
     - name: Test with pytest
-      run: poetry run pytest --browser chromium
+      run: BACKEND_URL="http://backend:8000" poetry run pytest --browser chromium

@@ -1,1 +1,3 @@
-BACKEND_URL: str = "http://dzailz.su:8000/"
+import os
+
+BACKEND_URL: str = os.environ.get("BACKEND_URL", "http://dzailz.su:8000/")

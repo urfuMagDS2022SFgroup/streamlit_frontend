@@ -3,6 +3,7 @@ FROM python:3.10-buster
 ENV HOST="0.0.0.0"
 ENV PORT="8080"
 ENV POETRY_VERSION="1.3.1"
+ENV BACKEND_URL="http://backend:8000"
 WORKDIR /front
 EXPOSE $PORT
 RUN pip install poetry==$POETRY_VERSION
