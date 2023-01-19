@@ -1,4 +1,4 @@
-[![Test Streamlit frontend](https://github.com/urfuMagDS2022SFgroup/streamlit_frontend/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/urfuMagDS2022SFgroup/streamlit_frontend/actions/workflows/tests.yml)
+[![Test Streamlit frontend](https://github.com/urfuMagDS2022SFgroup/streamlit_frontend/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/urfuMagDS2022SFgroup/streamlit_frontend/actions/workflows/tests.yml) [![Test linters](https://github.com/urfuMagDS2022SFgroup/streamlit_frontend/actions/workflows/linters.yml/badge.svg?branch=main)](https://github.com/urfuMagDS2022SFgroup/streamlit_frontend/actions/workflows/linters.yml)
 
 # Streamlit Frontend for our ML api
 
