@@ -28,13 +28,15 @@ def get_project_info() -> Any:
 def draw_title_and_authors(response: Response) -> None:
     response_text = json.loads(response.text)
     st.title(response_text["message"])
-    st.markdown(body=f"""
+    st.markdown(
+        body=f"""
     ### Authors:
     - {response_text["authors"][0]}
     - {response_text["authors"][1]}
     - {response_text["authors"][2]}
     - {response_text["authors"][3]}
-            """)
+            """
+    )
 
 
 def draw_git_hub_info(response: Response) -> None:
@@ -47,8 +49,7 @@ def post_text_to_predict(to_predict: dict) -> Response:
 
 
 def draw_sentiment(sentiment: str, lang: str, score: float) -> None:
-    report = f"Your language predicted as {lang.upper()} and with probability {score} " \
-             f"the sentiment was {sentiment}"
+    report = f"Your language predicted as {lang.upper()} and with probability {score} " f"the sentiment was {sentiment}"
     if sentiment == "NEGATIVE":
         st.error(report, icon="💩")
     elif sentiment == "NEUTRAL":
