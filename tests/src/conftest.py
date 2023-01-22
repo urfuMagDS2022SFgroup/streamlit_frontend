@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import Page
 
-from tests.files.constants import CONNECTION_URL, CONNECTION_PORT
+from tests.files.constants import CONNECTION_PORT, CONNECTION_URL
 
 
 @pytest.fixture(scope="function", autouse=True)
