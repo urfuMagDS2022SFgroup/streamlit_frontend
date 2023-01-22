@@ -41,7 +41,8 @@ def draw_title_and_authors(response: Response) -> None:
 
 def draw_git_hub_info(response: Response) -> None:
     response_text = json.loads(response.text)
-    st.markdown(f"[our Git Hub]({response_text['git_hub']})")
+    st.markdown(f"[our Git Hub (backend)]({response_text['git_hub_back']})")
+    st.markdown(f"[our Git Hub (frontend)]({response_text['git_hub_front']})")
 
 
 def post_text_to_predict(to_predict: dict) -> Response:
