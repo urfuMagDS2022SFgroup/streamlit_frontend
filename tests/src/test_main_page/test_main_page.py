@@ -26,7 +26,9 @@ class TestMainPage:
         expect(input_field).to_be_editable()
 
     def test_user_can_see_github_link(self, page: Page):
-        git_hub_url_locator = page.locator(".element-container p a")
+        git_hub_url_locator = page.locator(".element-container p a").first
+        expect(git_hub_url_locator).to_have_attribute("href", "https://github.com/urfuMagDS2022SFgroup/urfu_ml_backend")
+        git_hub_url_locator = page.locator(".element-container p a").last
         expect(git_hub_url_locator).to_have_attribute(
-            "href", "https://github.com/urfuMagDS2022SFgroup/sf_data_science_python"
+            "href", "https://github.com/urfuMagDS2022SFgroup/streamlit_frontend"
         )
